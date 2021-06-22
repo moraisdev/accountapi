@@ -11,7 +11,7 @@ class AccountSerializer(serializers.ModelSerializer):
 
     def validate_document(self, data):
         data = data.replace('.', '').replace('-', '')
-        if not len(data) == 12:
+        if len(data) == 12:
             raise serializers.ValidationError('CPF INVALIDO')
         return data
 
@@ -24,6 +24,6 @@ class AccountSerializer(serializers.ModelSerializer):
 
     def validate_phone(self, data):
         data = data.replace('(', '').replace(')', '').replace('-', '')
-        if not len (data) == 11:
+        if len (data) == 11:
             raise serializers.ValidationError('TELEFONE INVALIDO')
         return data

@@ -5,7 +5,7 @@ threadsafe: true
 runtime_config:
   python_version: 3
 env_variables:
-  DB_HOST: '35.239.249.79'
+  DB_HOST: '/cloudsql/essential-rider-317517:us-central1:accountdbapi2'
   DB_PORT: '3306'
   DB_NAME: 'accountapi'
   DB_USER: 'account'
@@ -14,3 +14,5 @@ handlers:
 - url: /.*
   script: auto
   secure: always
+beta_settings:
+    cloud_sql_instances: essential-rider-317517:us-central1:accountdbapi2
