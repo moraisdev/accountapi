@@ -3,10 +3,10 @@ Challenge
 
 ## Setup
 
-1 - Create e activate a virtualenv for the project
+1 - Create and active virtualenv for project
 [https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/]
 
-2- Install the requirements.txt
+2- Install requirements.txt
 [https://note.nkmk.me/en/python-pip-install-requirements/]
 
 ## Access deploy on google cloud
@@ -29,3 +29,9 @@ A API deve atender os seguintes requisitos:
 
 Em anexo está o arquivo openapi.yaml que possui a documentação de como devem ser os endpoints dessa API.
 Você pode visualizar a documentação abrindo esse arquivo em https://editor.swagger.io."
+
+###  P.S
+
+ 1. File to create the challenge sent in the same day of deadline. Just 24h more to finish.
+ 2. Not included tests because of item 1
+ 3. Not included frontend because of item 1
