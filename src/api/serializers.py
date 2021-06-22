@@ -25,5 +25,5 @@ class AccountSerializer(serializers.ModelSerializer):
     def validate_phone(self, data):
         data = data.replace('(', '').replace(')', '').replace('-', '')
         if len (data) != 11:
-            raise serializers.ValidationError('TELEFONE INVALIDO')
+            raise serializers.ValidationError('TELEFONE INVALIDO DIGITE (DDD+NONO DIGITO+TELEFONE)')
         return data
